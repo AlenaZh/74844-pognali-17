@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алёна Жилина](https://up.htmlacademy.ru/adaptive/17/user/74844).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Казанцев] (https://up.htmlacademy.ru/adaptive/17/user/24186).
 
 ---
 
