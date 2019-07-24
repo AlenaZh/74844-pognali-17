@@ -3,18 +3,21 @@
 }
 
 .flag__name {
-  font-family: "bloggersans-medium", "Arial", sans-serif;
   font-size: 15px;
   line-height: 18px;
+  font-family: "bloggersans-medium", "Arial", sans-serif;
   color: $c-cello;
   text-transform: uppercase;
 
+  border-radius: 5px;
+
   &--hidden {
-    color: $c-white;
-    background-color: $c-blueZodiac;
-    font-family: "bloggersans", "Arial", sans-serif;
     font-size: 20px;
     line-height: 24px;
+    font-family: "bloggersans", "Arial", sans-serif;
+    color: $c-white;
     text-transform: none;
+
+    background-color: $c-blueZodiac;
   }
 }

@@ -7,9 +7,15 @@
 
 .step__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
 
 .step__item {
+  padding: 22px;
+  border-radius: 10px;
+
   &--one {
     background-color: $c-neonCarrot;
   }
