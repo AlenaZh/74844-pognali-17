@@ -3,12 +3,30 @@
 }
 
 .tariffs__caption {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-neonCarrot;
 }
 
 .tariffs__business {
   background-color: $c-white;
+}
+
+.tariffs__button {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: center;
+  color: $c-bigStone;
+
+  &--modal {
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $c-cello;
+    background-color: $c-athensGray;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }

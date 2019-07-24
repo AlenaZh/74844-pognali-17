@@ -6,17 +6,21 @@
   color: $c-cello;
 
   &--more {
-    font-family: "bloggersans-bold", "Arial", sans-serif;
     font-size: 17px;
     line-height: 30px;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
     text-transform: uppercase;
   }
 
   &--back {
     background-color: $c-white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 
   &--next {
     background-color: $c-white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }

@@ -1,3 +1,16 @@
 .main-navigation {
   background-color: $c-white;
 }
+
+.main-navigation__auth {
+  display: block;
+
+  font-size: 17px;
+  line-height: 50px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: center;
+  color: $c-portGore;
+  text-transform: uppercase;
+
+  background-color: $c-mustard;
+}

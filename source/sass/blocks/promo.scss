@@ -1,14 +1,27 @@
 .promo {
   background-color: $c-portGore;
   background-image: url(../../img/traveller-illustration-mobile@1x.png),
-    url(../../img/globe-back-mobile@1x.jpg);
+  url(../../img/globe-back-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: bottom, center;
 }
 
-.promo__slogan{
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+.promo__slogan {
   font-size: 36px;
   line-height: 40px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-white;
+}
+
+.promo__auth {
+  display: block;
+
+  font-size: 17px;
+  line-height: 40px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: center;
+  color: $c-portGore;
+  text-transform: uppercase;
+
+  background-color: $c-mustard;
 }
