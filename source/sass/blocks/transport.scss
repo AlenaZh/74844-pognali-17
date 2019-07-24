@@ -1,0 +1,11 @@
+.transport__list {
+  list-style: none;
+}
+
+.transport__name {
+  color: $c-white;
+  background-color: $c-blueZodiac;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+}

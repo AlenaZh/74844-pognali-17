@@ -1,0 +1,28 @@
+.country-card__image {
+  background-color: $c-bigStone;
+}
+
+.country-card__wrapper {
+  background-color: $c-white;
+}
+
+.country-card__title {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: $c-portGore;
+}
+
+.country-card__slogan {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba($c-tundora, 0.3);
+}
+
+.country-card__count {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba($c-tundora, 0.3);
+}

@@ -1,0 +1,15 @@
+.contact__list {
+  list-style: none;
+}
+
+.contact__link--with-text {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-bigStone;
+  text-transform: uppercase;
+}
+
+.contact__link--with-text--light {
+  color: $c-mustard;
+}

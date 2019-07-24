@@ -1,0 +1,28 @@
+.step {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: $c-portGore;
+}
+
+.step__list {
+  list-style: none;
+}
+
+.step__item {
+  &--one {
+    background-color: $c-neonCarrot;
+  }
+
+  &--two {
+    background-color: $c-sunshade;
+  }
+
+  &--three {
+    background-color: $c-sunglow;
+  }
+
+  &--four {
+    background-color: $c-mustard;
+  }
+}

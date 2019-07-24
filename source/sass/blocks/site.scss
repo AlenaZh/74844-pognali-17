@@ -1,0 +1,14 @@
+.site {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: $c-bigStone;
+}
+
+.site__list {
+  list-style: none;
+}
+
+.site__link {
+  color: inherit;
+}

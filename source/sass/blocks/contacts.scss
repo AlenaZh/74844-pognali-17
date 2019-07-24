@@ -1,0 +1,21 @@
+.contacts {
+  background-color: $c-bigStone;
+}
+
+.contacts__caption {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $c-neonCarrot;
+}
+
+.contacts__text {
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-white;
+}
+
+.contacts__link {
+  color: $c-mustard;
+}

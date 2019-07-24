@@ -1,0 +1,14 @@
+.promo {
+  background-color: $c-portGore;
+  background-image: url(../../img/traveller-illustration-mobile@1x.png),
+    url(../../img/globe-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+}
+
+.promo__slogan{
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: $c-white;
+}

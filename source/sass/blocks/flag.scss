@@ -1,0 +1,20 @@
+.flag__list {
+  list-style: none;
+}
+
+.flag__name {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: $c-cello;
+  text-transform: uppercase;
+
+  &--hidden {
+    color: $c-white;
+    background-color: $c-blueZodiac;
+    font-family: "bloggersans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: none;
+  }
+}

@@ -1,0 +1,24 @@
+.about {
+  background-color: $c-bigStone;
+  background-image: url(../../img/about-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__caption {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: $c-neonCarrot;
+}
+
+.about__text {
+  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-white;
+
+  &--accent {
+    font-family: "bloggersans-bold", "Arial", sans-serif;
+  }
+}

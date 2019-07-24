@@ -1,0 +1,12 @@
+.location {
+  background-color: $c-mustard;
+}
+
+.location__address {
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: $c-bigStone;
+}

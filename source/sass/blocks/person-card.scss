@@ -1,0 +1,35 @@
+.person-card {
+  background-color: $c-white;
+}
+
+.person-card__name {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  color: $c-cello;
+}
+
+.person-card__distance {
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: $c-cello;
+}
+
+.person-card__section {
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: $c-tundora;
+  background-color: $c-white;
+}
+
+.person-card__like {
+  background-color: $c-whisper;
+  border: none;
+  border-radius: 50%;
+
+  &--current {
+    background-color: $c-fantasy;
+  }
+}

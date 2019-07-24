@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  color: $c-tundora;
+
+  background-color: $c-whisper;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

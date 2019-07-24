@@ -1,0 +1,22 @@
+.partner {
+  background-color: $c-whisper;
+}
+
+.partner__button {
+  color: $c-cello;
+
+  &--more {
+    font-family: "bloggersans-bold", "Arial", sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &--back {
+    background-color: $c-white;
+  }
+
+  &--next {
+    background-color: $c-white;
+  }
+}
