@@ -3,6 +3,7 @@
 }
 
 .person-card__name {
+  font-style: normal;
   font-size: 21px;
   line-height: 21px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
@@ -10,6 +11,7 @@
 }
 
 .person-card__distance {
+  font-style: normal;
   font-size: 14px;
   line-height: 21px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
@@ -17,6 +19,7 @@
 }
 
 .person-card__section {
+  font-style: normal;
   font-size: 15px;
   line-height: 18px;
   font-family: "bloggersans", "Arial", sans-serif;
@@ -38,13 +41,14 @@
 .person-card__button {
   display: block;
 
+  font-style: normal;
   font-size: 17px;
   line-height: 40px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: center;
   color: $c-portGore;
   text-transform: uppercase;
 
   background-color: $c-mustard;
   border-radius: 15px;
-  text-align: center;
 }

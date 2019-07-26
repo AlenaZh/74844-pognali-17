@@ -1,13 +1,15 @@
 .hashtags {
-  font-family: "bloggersans", "Arial", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 18px;
+  font-family: "bloggersans", "Arial", sans-serif;
   color: $c-tundora;
 }
 
 .hashtags__list {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .hashtags__link {

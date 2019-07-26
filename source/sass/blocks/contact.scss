@@ -3,38 +3,42 @@
 }
 
 .contact__link--with-text {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-bigStone;
   text-transform: uppercase;
 
   &::before {
     content: "";
+
+    display: block;
     width: 45px;
     height: 45px;
+
     background-color: $c-ebony;
-    display: block;
     border-radius: 50%;
   }
-}
 
-.contact__link--with-text--light {
-  color: $c-mustard;
-}
+  &--with-text--light {
+    color: $c-mustard;
+  }
 
-.contact__link--phone {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $c-neonCarrot;
-}
+  &--phone {
+    display: block;
+    width: 40px;
+    height: 40px;
 
-.contact__link--email {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $c-sunglow;
+    background-color: $c-neonCarrot;
+    border-radius: 50%;
+  }
+
+  &--email {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-color: $c-sunglow;
+    border-radius: 50%;
+  }
 }

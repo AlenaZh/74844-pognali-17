@@ -1,11 +1,13 @@
 .price__list {
-  list-style: none;
   padding: 0;
+
+  list-style: none;
 }
 
 .price__item {
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
+  font-family: "bloggersans-light", "Arial", sans-serif;
   color: $c-tundora;
 }

@@ -6,16 +6,18 @@
 }
 
 .about__caption {
-  font-family: "bloggersans-bold", "Arial", sans-serif;
+  font-style: normal;
   font-size: 24px;
   line-height: 24px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-neonCarrot;
 }
 
 .about__text {
-  font-family: "bloggersans-light", "Arial", sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 22px;
+  font-family: "bloggersans-light", "Arial", sans-serif;
   color: $c-white;
 
   &--accent {
