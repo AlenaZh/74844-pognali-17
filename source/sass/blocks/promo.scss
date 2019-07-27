@@ -46,6 +46,15 @@
     background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
   }
 
+  .promo__auth {
+    display: none;
+  }
+
+  .promo__slogan {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
   .promo__contact {
     display: none;
   }

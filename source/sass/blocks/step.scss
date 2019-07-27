@@ -39,18 +39,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .step {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
   .step__list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .step__item{
+  .step__item {
     width: 50%;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .step__item{
+  .step__item {
     width: 25%;
   }
 }
