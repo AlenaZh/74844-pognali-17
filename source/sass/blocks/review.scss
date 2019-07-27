@@ -2,6 +2,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $c-white;
+  width: 160px;
 }
 
 .review__text {
@@ -12,4 +13,20 @@
 .review__author {
   font-style: normal;
   font-family: "bloggersans-bold", "Arial", sans-serif;
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .review{
+    width: 280px;
+  }
+  .review__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .review__author {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }

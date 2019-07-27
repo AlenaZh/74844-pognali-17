@@ -9,6 +9,7 @@
 .site__list {
   display: flex;
   flex-flow: column;
+  align-items: center;
   padding: 0;
 
   list-style: none;
@@ -18,8 +19,24 @@
   color: inherit;
 }
 
+@media (min-width: $tablet-width) {
+  .site {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .site__list {
+    align-items: flex-start;
+  }
+}
 
 @media (min-width: $desktop-width) {
+  .site {
+    font-size: 20px;
+    line-height: 30px;
+    color: $c-white;
+  }
+
   .site__list {
     flex-flow: row;
     flex-wrap: nowrap;

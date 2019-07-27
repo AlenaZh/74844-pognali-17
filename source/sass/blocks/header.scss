@@ -1,6 +1,9 @@
 .header {
   display: flex;
   flex-flow: column;
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 
   background-color: $c-portGore;
 }
@@ -10,6 +13,7 @@
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  padding:0 25px;
 }
 
 .header__auth {
@@ -28,6 +32,9 @@
   .header {
     width: 768px;
   }
+  .header__wrapper {
+    padding: 0 40px;
+  }
 
   .header__auth {
     display: block;
@@ -39,6 +46,11 @@
     flex-flow: row;
     flex-wrap: nowrap;
     width: 1440px;
+    padding: 0 60px;
+  }
+
+  .header__wrapper {
+    padding: 0;
   }
 
   .header__auth {

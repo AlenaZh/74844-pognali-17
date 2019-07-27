@@ -10,6 +10,7 @@
   display: flex;
   flex-flow: row;
   flex-wrap: nowrap;
+  align-items: center;
 
   &::before {
     content: "";
@@ -86,6 +87,8 @@
       &--hide-text {
         &::before {
           background-color: $c-neonCarrot;
+          width: 40px;
+          height: 40px;
         }
 
         &::after {
@@ -98,6 +101,8 @@
       &--hide-text {
         &::before {
           background-color: $c-sunglow;
+          width: 40px;
+          height: 40px;
         }
 
         &::after {

@@ -3,6 +3,9 @@
   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center;
+  padding-top: 20px;
+  display: flex;
+  flex-flow: column;
 }
 
 .promo__slogan {
@@ -11,6 +14,13 @@
   line-height: 40px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-white;
+  text-align: center;
+
+}
+
+.promo__user-nav {
+  display: flex;
+  flex-flow: row;
 }
 
 .promo__auth {
@@ -27,8 +37,17 @@
   background-color: $c-mustard;
 }
 
+.promo__review{
+  margin-left: 25px;
+}
+
 @media (min-width: $tablet-width) {
+
   .promo__contact {
     display: none;
+  }
+
+  .promo__review{
+    margin-left: 35px;
   }
 }
