@@ -15,47 +15,19 @@
     content: "";
 
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 
+    background-color: $c-ebony;
     border-radius: 50%;
   }
 
-  &--phone {
-    &::before {
-      background-color: $c-neonCarrot;
-    }
-
-    &::after {
-      background-image: ("url/img.svg");
-    }
+  &--phone::after {
+    background-image: ("url/img.svg");
   }
 
-  &--email {
-    &::before {
-      background-color: $c-sunglow;
-    }
-
-    &::after {
-      background-image: ("url/img.svg");
-    }
-  }
-
-  &--with-text {
-    &::before {
-      width: 45px;
-      height: 45px;
-
-      background-color: $c-ebony;
-    }
-
-    &--phone::after {
-      background-image: ("url/img.svg");
-    }
-
-    &--email::after {
-      background-image: ("url/img.svg");
-    }
+  &--email::after {
+    background-image: ("url/img.svg");
   }
 }
 
@@ -74,6 +46,34 @@
 
 @media (min-width: $desktop-width) {
   .contact__text {
-    display: none;
+    &--hide {
+      display: none;
+    }
+  }
+
+  .contact__link {
+    &--phone {
+      &--without-text {
+        &::before {
+          background-color: $c-neonCarrot;
+        }
+
+        &::after {
+          background-image: ("url/img.svg");
+        }
+      }
+    }
+
+    &--email {
+      &--without-text {
+        &::before {
+          background-color: $c-sunglow;
+        }
+
+        &::after {
+          background-image: ("url/img.svg");
+        }
+      }
+    }
   }
 }
