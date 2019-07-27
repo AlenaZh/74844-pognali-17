@@ -7,6 +7,10 @@
 }
 
 .contact__link {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+
   &::before {
     content: "";
 
@@ -65,5 +69,11 @@
 
   &--light {
     color: $c-mustard;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contact__text {
+    display: none;
   }
 }
