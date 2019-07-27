@@ -1,8 +1,9 @@
 .review {
+  width: 160px;
+
   font-size: 16px;
   line-height: 22px;
   color: $c-white;
-  width: 160px;
 }
 
 .review__text {
@@ -17,8 +18,7 @@
 
 
 @media (min-width: $tablet-width) {
-
-  .review{
+  .review {
     width: 280px;
   }
   .review__text {
