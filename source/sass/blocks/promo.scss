@@ -26,3 +26,9 @@
 
   background-color: $c-mustard;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__contact {
+    display: none;
+  }
+}

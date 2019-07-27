@@ -22,12 +22,42 @@
     border-radius: 50%;
   }
 
-  &--phone::after {
-    background-image: ("url/img.svg");
+  &--phone {
+    &::after {
+      background-image: ("url/img.svg");
+    }
+
+    &--without-text {
+      &::before {
+        width: 40px;
+        height: 40px;
+
+        background-color: $c-neonCarrot;
+      }
+
+      &::after {
+        background-image: ("url/img.svg");
+      }
+    }
   }
 
-  &--email::after {
-    background-image: ("url/img.svg");
+  &--email {
+    &::after {
+      background-image: ("url/img.svg");
+    }
+
+    &--without-text {
+      &::before {
+        width: 40px;
+        height: 40px;
+
+        background-color: $c-sunglow;;
+      }
+
+      &::after {
+        background-image: ("url/img.svg");
+      }
+    }
   }
 }
 
@@ -53,7 +83,7 @@
 
   .contact__link {
     &--phone {
-      &--without-text {
+      &--hide-text {
         &::before {
           background-color: $c-neonCarrot;
         }
@@ -65,7 +95,7 @@
     }
 
     &--email {
-      &--without-text {
+      &--hide-text {
         &::before {
           background-color: $c-sunglow;
         }
