@@ -1,12 +1,14 @@
 .step {
+  font-style: normal;
   font-size: 18px;
   line-height: 18px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
-  font-style: normal;
   color: $c-portGore;
 }
 
 .step__list {
+  display: flex;
+  flex-flow: column;
   margin: 0;
   padding: 0;
 
@@ -14,6 +16,7 @@
 }
 
 .step__item {
+  box-sizing: border-box;
   padding: 22px;
 
   border-radius: 10px;
@@ -32,5 +35,22 @@
 
   &--four {
     background-color: $c-mustard;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .step__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .step__item{
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .step__item{
+    width: 25%;
   }
 }
