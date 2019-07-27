@@ -7,9 +7,21 @@
 }
 
 .site__list {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+
   list-style: none;
 }
 
 .site__link {
   color: inherit;
+}
+
+
+@media (min-width: $desktop-width) {
+  .site__list {
+    flex-flow: row;
+    flex-wrap: nowrap;
+  }
 }

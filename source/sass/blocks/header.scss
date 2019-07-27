@@ -1,5 +1,19 @@
 .header {
+  display: flex;
+  flex-flow: column;
+
   background-color: $c-portGore;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.header__auth {
+  display: none;
 }
 
 .header__position {
@@ -8,4 +22,31 @@
   line-height: 40px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-white;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .header__auth {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    flex-flow: row;
+    flex-wrap: nowrap;
+    width: 1440px;
+  }
+
+  .header__auth {
+    display: none;
+  }
+
+  .header__toggle {
+    display: none;
+  }
 }

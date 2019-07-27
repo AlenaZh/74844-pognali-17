@@ -1,4 +1,8 @@
 .contact__list {
+  display: flex;
+  flex-flow: inherit;
+  padding: 0;
+
   list-style: none;
 }
 
