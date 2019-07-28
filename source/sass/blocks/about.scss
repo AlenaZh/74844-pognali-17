@@ -89,16 +89,14 @@
   .about {
     padding-top: 130px;
     padding-bottom: 160px;
+
+    background-image: url("../../img/about-desktop@1x.png");
+    background-position: right;
   }
 
   .about__inner {
     width: 690px;
     margin: 0;
     padding-left: 70px;
-  }
-
-  .about {
-    background-image: url("../../img/about-desktop@1x.png");
-    background-position: right;
   }
 }
