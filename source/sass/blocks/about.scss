@@ -1,11 +1,21 @@
 .about {
+  padding-top: 30px;
+  padding-bottom: 80px;
+
   background-color: $c-bigStone;
   background-image: url("../../img/about-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.about__inner {
+  width: 210px;
+  margin: 0 auto;
+}
+
 .about__caption {
+  margin: 0;
+
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
@@ -22,5 +32,73 @@
 
   &--accent {
     font-family: "bloggersans-bold", "Arial", sans-serif;
+  }
+}
+
+.about__button {
+  display: none;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 0 24px;
+
+  font-style: normal;
+  font-size: 24px;
+  line-height: 80px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: left;
+  color: #1d2e5b;
+
+  background-color: #ffd74b;
+  border-radius: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    background-image: url("../../img/about-tablet@1x.png");
+    background-position: right;
+  }
+
+  .about__inner {
+    box-sizing: border-box;
+    width: 340px;
+    margin: 0;
+    padding-left: 33px;
+  }
+
+  .about__caption {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .about__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--accent {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .about__button {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 160px;
+  }
+
+  .about__inner {
+    width: 690px;
+    margin: 0;
+    padding-left: 70px;
+  }
+
+  .about {
+    background-image: url("../../img/about-desktop@1x.png");
+    background-position: right;
   }
 }

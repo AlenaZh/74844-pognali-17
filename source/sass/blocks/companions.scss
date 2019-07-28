@@ -1,8 +1,17 @@
 .companions {
+  padding-top: 70px;
+  padding-bottom: 28px;
+
   background-color: $c-bigStone;
   background-image: url("../../img/smolov-back-desktop@1x.png"), url("../../img/rogovaya-back-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: top right, bottom left;
+}
+
+.companions__inner {
+  box-sizing: border-box;
+  width: 242px;
+  padding-left: 25px;
 }
 
 .companions__caption {
@@ -37,4 +46,31 @@
 
   background-color: $c-mustard;
   border-radius: 5px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .companions__person {
+    padding: 0 35px;
+  }
+
+  .companions__inner {
+    width: 466px;
+    padding-left: 35px;
+  }
+
+  .companions__caption {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .companions__text {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--accent {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
 }

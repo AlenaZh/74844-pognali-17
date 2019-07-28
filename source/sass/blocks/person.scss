@@ -1,4 +1,18 @@
 .person__list {
-  list-style: none;
+  display: flex;
+  flex-flow: column;
   padding: 0;
+
+  list-style: none;
+}
+
+.person__item {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .person__list {
+    flex-flow: row;
+    justify-content: space-between;
+  }
 }

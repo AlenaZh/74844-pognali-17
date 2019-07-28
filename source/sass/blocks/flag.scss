@@ -1,4 +1,9 @@
 .flag__list {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 0;
+
   list-style: none;
 }
 

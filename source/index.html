@@ -107,8 +107,10 @@
         </div>
 
         <blockquote class="promo__review review">
-          <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
-          <cite class="review__author">Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+          <div class="review__inner">
+            <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
+            <cite class="review__author">Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</cite>
+          </div>
         </blockquote>
 
         <div class="promo__step step">
@@ -123,267 +125,289 @@
     </section>
 
     <section class="about">
-      <h2 class="about__caption">О сервисе</h2>
+      <div class="about__container container">
+        <div class="about__inner">
+          <h2 class="about__caption">О сервисе</h2>
 
-      <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
-      <p class="about__text about__text--accent">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <p class="about__text">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. </p>
+          <p class="about__text about__text--accent">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <a class="about__button" href="#">Подробнее</a>
+        </div>
+      </div>
     </section>
 
-    <section class="routes">
-      <h2 class="routes__caption">Направления</h2>
+    <div class="container">
+      <section class="routes">
 
-      <p class="routes__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <h2 class="routes__caption">Направления</h2>
 
-      <div class="routes__country country">
-        <ul class="country__list">
-          <li class="country__item country-card">
-            <img class="country-card__image" src="img/image.jpg" width="270" height="110" alt="Изображение Тайланда">
-            <div class="country-card__wrapper country-card__wrapper--thailend">
-              <h3 class="country-card__title">Тайланд</h3>
-              <p class="country-card__slogan">Джугли зовут!</p>
-              <p class="country-card__count">18321</p>
-            </div>
-          </li>
-          <li class="country__item country-card">
-            <img class="country-card__image" src="img/image.jpg" width="270" height="110" alt="Изображение Франции">
-            <div class="country-card__wrapper country-card__wrapper--france">
-              <h3 class="country-card__title">Франция</h3>
-              <p class="country-card__slogan">Трэ бьен, манифик!</p>
-              <p class="country-card__count">12518</p>
-            </div>
-          </li>
-          <li class="country__item country-card">
-            <img class="country-card__image" src="img/image.jpg" width="270" height="110" alt="Изображение Чехии">
-            <div class="country-card__wrapper country-card__wrapper--czech">
-              <h3 class="country-card__title">Чехия</h3>
-              <p class="country-card__slogan">Закоулки старой Европы</p>
-              <p class="country-card__count">5326</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+        <p class="routes__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
 
-      <a class="routes__button button button--big" href="#">Показать все</a>
-    </section>
-
-    <section class="companions">
-      <h2 class="companions__caption">Попутчики</h2>
-
-      <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-      <p class="companions__text companions__text--accent">Теперь можно легко найти единомышленников!</p>
-
-      <div class="companions__person person">
-        <ul class="person__list">
-          <li class="person__item person-card">
-            <div class="person-card__level level">
-              <span class="level__number">99</span>
-              <span class="level__text">level</span>
-            </div>
-            <img class="person-card__image" src="img/image.jpg" width="270" height="270" alt="Фото Таня Фрисова">
-
-            <div class="person-card__flag flag">
-              <ul class="flag__list">
-                <li class="flag__item flag__item--sri-lanka">
-                  <span class="flag__name flag__name--hidden">Шри Ланка</span>
-                </li>
-                <li class="flag__item flag__item--thailend">
-                  <span class="flag__name flag__name--hidden">Тайланд</span>
-                </li>
-                <li class="flag__item flag__item--seychelles">
-                  <span class="flag__name flag__name--hidden">Сейшелы</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="person-card__indicator person-card__indicator--offline">
-              <span class="visually-hidden">Не в сети</span>
-            </div>
-            <h3 class="person-card__name">Таня Фрисова</h3>
-
-            <div class="person-card__hashtags hashtags">
-              <ul class="hashtags__list">
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#ЗОЖ</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#ПП</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#Фитнес</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#пляж</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#авокадо</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#смузи</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="person-card__transport transport">
-              <ul class="transport__list">
-                <li class="transport__item transport__item--airplane transport__item--active">
-                  <span class="transport__name">Авиаперелет</span>
-                </li>
-                <li class="transport__item transport__item--car">
-                  <span class="transport__name">Автотранспорт</span>
-                </li>
-                <li class="transport__item transport__item--bicycle">
-                  <span class="transport__name">Велосипед</span>
-                </li>
-                <li class="transport__item transport__item--foot">
-                  <span class="transport__name">Пешком</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="person__item person-card">
-            <div class="person-card level">
-              <span class="level__number">80</span>
-              <span class="level__text">level</span>
-            </div>
-            <img class="person-card__image" src="img/image.jpg" width="270" height="270" alt="Фото Петя Демин">
-
-            <div class="person-flag flag">
-              <ul class="flag__list">
-                <li class="flag__item flag__item--belgium">
-                  <span class="flag__name flag__name--hidden">Бельгия</span>
-                </li>
-                <li class="flag__item flag__item--czech">
-                  <span class="flag__name flag__name--hidden">Чехия</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="person-card__indicator person-card__indicator--offline">
-              <span class="visually-hidden">Не в сети</span>
-            </div>
-            <h3 class="person-card__name">Петя Демин</h3>
-
-            <div class="person-card__hashtags hashtags">
-              <ul class="hashtags__list">
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#бургер</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#бар</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#футбол</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#концерт</a>
-                </li>
-                <li class="hashtags__item">
-                  <a class="hashtags__link" href="#">#крафт</a>
-                </li>
-              </ul>
-            </div>
-            <div class="person-card__transport transport">
-              <ul class="transport__list">
-                <li class="transport__item transport__item--airplane transport__item--active">
-                  <span class="transport__name">Авиаперелет</span>
-                </li>
-                <li class="transport__item transport__item--car transport__item--active">
-                  <span class="transport__name">Автотранспорт</span>
-                </li>
-                <li class="transport__item transport__item--bicycle">
-                  <span class="transport__name">Велосипед</span>
-                </li>
-                <li class="transport__item transport__item--foot transport__item--active">
-                  <span class="transport__name">Пешком</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <a class="companions__button button button--big" href="#">Показать всеx</a>
-    </section>
-
-    <section class="tariffs">
-      <h2 class="tariffs__caption">Добавтьте свой профиль</h2>
-
-      <div class="tariffs__price price">
-        <ul class="price__list">
-          <li class="price__item price__item--one">
-            <p class="price__name">Базовое размещение</p>
-            <p class="price__value">Бесплатно</p>
-          </li>
-          <li class="price__item price__item--two">
-            <p class="price__name">Вывод на первых позициях</p>
-            <p class="price__value">99 руб./мес</p>
-          </li>
-          <li class="price__item price__item--three">
-            <p class="price__name">Кастомный цвет карточки</p>
-            <p class="price__value">59 руб./мес</p>
-          </li>
-        </ul>
-      </div>
-      <a class="tariffs__button" href="#">Показать тарифы для бизнеса</a>
-
-      <div class="tariffs__business">
-        <h3 class="tariffs__caption">Бизнес-тарифы</h3>
-        <div class="tariffs__price price">
-          <ul class="price__list">
-            <li class="price__item">
-              <p class="price__name">Реклама у блоггера</p>
-              <p class="price__value">300 000 руб./пост</p>
+        <div class="routes__country country">
+          <ul class="country__list">
+            <li class="country__item country-card">
+              <img class="country-card__image" src="img/image.jpg" width="270" height="110" alt="Изображение Тайланда">
+              <div class="country-card__wrapper country-card__wrapper--thailend">
+                <div class="country-card__text">
+                  <h3 class="country-card__title">Тайланд</h3>
+                  <p class="country-card__slogan">Джугли зовут!</p>
+                </div>
+                <p class="country-card__count">18321</p>
+              </div>
             </li>
-            <li class="price__item">
-              <p class="price__name">Накрутка подписчиков</p>
-              <p class="price__value">от 1 руб./шт.</p>
+            <li class="country__item country-card">
+              <img class="country-card__image" src="img/image.jpg" width="270" height="110" alt="Изображение Франции">
+              <div class="country-card__wrapper country-card__wrapper--france">
+                <div class="country-card__text">
+                  <h3 class="country-card__title">Франция</h3>
+                  <p class="country-card__slogan">Трэ бьен, манифик!</p>
+                </div>
+                <p class="country-card__count">12518</p>
+              </div>
             </li>
-            <li class="price__item">
-              <p class="price__name">Лайки от ботов</p>
-              <p class="price__value">от 20 коп./лайк</p>
-            </li>
-            <li class="price__item">
-              <p class="price__name">Ваш продакт-плейсмент</p>
-              <p class="price__value">Индивидуально</p>
+            <li class="country__item country-card">
+              <img class="country-card__image" src="img/image.jpg" width="270" height="110" alt="Изображение Чехии">
+              <div class="country-card__wrapper country-card__wrapper--czech">
+                <div class="country-card__text">
+                  <h3 class="country-card__title">Чехия</h3>
+                  <p class="country-card__slogan">Закоулки старой Европы</p>
+                </div>
+                <p class="country-card__count">5326</p>
+              </div>
             </li>
           </ul>
         </div>
-        <button class="tariffs__button tariffs__button--modal" type="button">Закрыть окно</button>
+
+        <a class="routes__button button button--big" href="#">Показать все</a>
+      </section>
+    </div>
+    <section class="companions">
+      <div class="companions__container container">
+        <div class="companions__inner">
+
+          <h2 class="companions__caption">Попутчики</h2>
+
+          <p class="companions__text">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+          <p class="companions__text companions__text--accent">Теперь можно легко найти единомышленников!</p>
+        </div>
+        <div class="companions__person person">
+          <ul class="person__list">
+            <li class="person__item person-card">
+              <div class="person-card__level level">
+                <span class="level__number">99</span>
+                <span class="level__text">level</span>
+              </div>
+              <img class="person-card__image" src="img/image.jpg" width="270" height="270" alt="Фото Таня Фрисова">
+
+              <div class="person-card__flag flag">
+                <ul class="flag__list">
+                  <li class="flag__item flag__item--sri-lanka">
+                    <span class="flag__name flag__name--hidden">Шри Ланка</span>
+                  </li>
+                  <li class="flag__item flag__item--thailend">
+                    <span class="flag__name flag__name--hidden">Тайланд</span>
+                  </li>
+                  <li class="flag__item flag__item--seychelles">
+                    <span class="flag__name flag__name--hidden">Сейшелы</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="person-card__indicator person-card__indicator--offline">
+                <span class="visually-hidden">Не в сети</span>
+              </div>
+              <h3 class="person-card__name">Таня Фрисова</h3>
+
+              <div class="person-card__hashtags hashtags">
+                <ul class="hashtags__list">
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#ЗОЖ</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#ПП</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#Фитнес</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#пляж</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#авокадо</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#смузи</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="person-card__transport transport">
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--airplane transport__item--active">
+                    <span class="transport__name">Авиаперелет</span>
+                  </li>
+                  <li class="transport__item transport__item--car">
+                    <span class="transport__name">Автотранспорт</span>
+                  </li>
+                  <li class="transport__item transport__item--bicycle">
+                    <span class="transport__name">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--foot">
+                    <span class="transport__name">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="person__item person-card">
+              <div class="person-card__level level">
+                <span class="level__number">80</span>
+                <span class="level__text">level</span>
+              </div>
+              <img class="person-card__image" src="img/image.jpg" width="270" height="270" alt="Фото Петя Демин">
+
+              <div class="person-flag flag">
+                <ul class="flag__list">
+                  <li class="flag__item flag__item--belgium">
+                    <span class="flag__name flag__name--hidden">Бельгия</span>
+                  </li>
+                  <li class="flag__item flag__item--czech">
+                    <span class="flag__name flag__name--hidden">Чехия</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="person-card__indicator person-card__indicator--offline">
+                <span class="visually-hidden">Не в сети</span>
+              </div>
+              <h3 class="person-card__name">Петя Демин</h3>
+
+              <div class="person-card__hashtags hashtags">
+                <ul class="hashtags__list">
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#бургер</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#бар</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#футбол</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#концерт</a>
+                  </li>
+                  <li class="hashtags__item">
+                    <a class="hashtags__link" href="#">#крафт</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="person-card__transport transport">
+                <ul class="transport__list">
+                  <li class="transport__item transport__item--airplane transport__item--active">
+                    <span class="transport__name">Авиаперелет</span>
+                  </li>
+                  <li class="transport__item transport__item--car transport__item--active">
+                    <span class="transport__name">Автотранспорт</span>
+                  </li>
+                  <li class="transport__item transport__item--bicycle">
+                    <span class="transport__name">Велосипед</span>
+                  </li>
+                  <li class="transport__item transport__item--foot transport__item--active">
+                    <span class="transport__name">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <a class="companions__button button button--big" href="#">Показать всеx</a>
       </div>
     </section>
 
+    <section class="tariffs">
+      <div class="tariffs__container container">
+        <h2 class="tariffs__caption">Добавтьте свой профиль</h2>
+
+        <div class="tariffs__price price">
+          <ul class="price__list">
+            <li class="price__item price__item--one">
+              <p class="price__name">Базовое размещение</p>
+              <p class="price__value">Бесплатно</p>
+            </li>
+            <li class="price__item price__item--two">
+              <p class="price__name">Вывод на первых позициях</p>
+              <p class="price__value">99 руб./мес</p>
+            </li>
+            <li class="price__item price__item--three">
+              <p class="price__name">Кастомный цвет карточки</p>
+              <p class="price__value">59 руб./мес</p>
+            </li>
+          </ul>
+        </div>
+        <a class="tariffs__button" href="#">Показать тарифы для бизнеса</a>
+
+        <div class="tariffs__business">
+          <h3 class="tariffs__caption tariffs__caption--modal">Бизнес-тарифы</h3>
+          <div class="tariffs__price price">
+            <ul class="price__list price__list--business">
+              <li class="price__item">
+                <p class="price__name">Реклама у блоггера</p>
+                <p class="price__value">300 000 руб./пост</p>
+              </li>
+              <li class="price__item">
+                <p class="price__name">Накрутка подписчиков</p>
+                <p class="price__value">от 1 руб./шт.</p>
+              </li>
+              <li class="price__item">
+                <p class="price__name">Лайки от ботов</p>
+                <p class="price__value">от 20 коп./лайк</p>
+              </li>
+              <li class="price__item">
+                <p class="price__name">Ваш продакт-плейсмент</p>
+                <p class="price__value">Индивидуально</p>
+              </li>
+            </ul>
+          </div>
+          <button class="tariffs__button tariffs__button--modal" type="button">Закрыть окно</button>
+        </div>
+    </section>
+
     <section class="contacts">
-      <h2 class="visually-hidden">Связаться с нами</h2>
+      <div class="contacts__container container">
+        <h2 class="visually-hidden">Связаться с нами</h2>
 
-      <p class="contacts__caption">Заинтересовались?</p>
-      <p class="contacts__text">Зарегистрируйтесь,это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contacts__link" href="#">авторизуйтесь</a>.</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="email" name="email" placeholder="email">
-        <button type="submit">Отправить</button>
-      </form>
-      <p class="contacts__text">Остались вопросы? Мы с радостью на них ответим!</p>
+        <p class="contacts__caption">Заинтересовались?</p>
+        <p class="contacts__text">Зарегистрируйтесь,это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contacts__link" href="#">авторизуйтесь</a>.</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email" placeholder="email">
+          <button type="submit">Регистрация</button>
+        </form>
+        <p class="contacts__text">Остались вопросы? Мы с радостью на них ответим!</p>
 
-      <div class="contacts__contact contact">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a class="contact__link contact__link--phone" href="tel:88005558628">
-              <span class="contact__text contact__text--light">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link contact__link--email" href="mailto:mail@htmlacademy.ru">
-              <span class="contact__text contact__text--light">mail@htmlacademy.ru</span>
-            </a>
-          </li>
-        </ul>
+        <div class="contacts__contact contact">
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a class="contact__link contact__link--phone" href="tel:88005558628">
+                <span class="contact__text contact__text--light">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link contact__link--email" href="mailto:mail@htmlacademy.ru">
+                <span class="contact__text contact__text--light">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="location">
-      <h2 class="visually-hidden">Местоположение офиса "Погнали!"</h2>
-      <address class="location__address">ул. Большая Конюшенная, 19/8</address>
-      <a class="location__button button button--big button--border" href="#">Проложить маршрут</a>
+      <div class="location__inner">
+        <h2 class="visually-hidden">Местоположение офиса "Погнали!"</h2>
+        <address class="location__address">ул. Большая Конюшенная, 19/8</address>
+        <a class="location__button button button--big button--border" href="#">Проложить маршрут</a>
+      </div>
       <img src="img/map.jpg" width="100" height="100" alt="Офис Погнали! по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19/8">
     </section>
   </main>

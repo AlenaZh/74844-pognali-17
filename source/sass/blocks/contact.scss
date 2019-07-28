@@ -1,6 +1,8 @@
 .contact__list {
   display: flex;
   flex-flow: inherit;
+  flex-flow: column;
+  margin: 0;
   padding: 0;
 
   list-style: none;
@@ -75,7 +77,18 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .contact__text {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .contact__list {
+    flex-flow: row;
+  }
+
   .contact__text {
     &--hide {
       display: none;
@@ -86,9 +99,10 @@
     &--phone {
       &--hide-text {
         &::before {
-          background-color: $c-neonCarrot;
           width: 40px;
           height: 40px;
+
+          background-color: $c-neonCarrot;
         }
 
         &::after {
@@ -100,9 +114,10 @@
     &--email {
       &--hide-text {
         &::before {
-          background-color: $c-sunglow;
           width: 40px;
           height: 40px;
+
+          background-color: $c-sunglow;
         }
 
         &::after {

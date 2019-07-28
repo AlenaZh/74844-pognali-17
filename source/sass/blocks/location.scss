@@ -1,8 +1,15 @@
-.location {
+.location__inner {
+  display: flex;
+  flex-flow: column;
+
   background-color: $c-mustard;
 }
 
 .location__address {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
@@ -36,4 +43,15 @@
   background-color: $c-mustard;
   border: 3px solid $c-bigStone;
   border-radius: 5px;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__contact {
+    align-self: center;
+  }
+
+  .location__inner {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

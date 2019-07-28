@@ -1,12 +1,15 @@
 .promo {
-  display: flex;
-  flex-flow: column;
   padding-top: 20px;
 
   background-color: $c-portGore;
   background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom, center;
+  background-position: 76px 140px, center -79px;
+}
+
+.promo__container {
+  display: flex;
+  flex-flow: column;
 }
 
 .promo__slogan {
@@ -19,12 +22,17 @@
 }
 
 .promo__user-nav {
+  z-index: 1;
+
   display: flex;
   flex-flow: row;
+  align-items: center;
+  margin-top: 240px;
 }
 
 .promo__auth {
   display: block;
+  padding: 0 40px;
 
   font-style: normal;
   font-size: 17px;
@@ -35,14 +43,28 @@
   text-transform: uppercase;
 
   background-color: $c-mustard;
+  border-radius: 20px;
 }
 
 .promo__review {
-  margin-left: 25px;
+  margin: 0 -25px;
+  margin-top: -20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  background-color: $c-portGore;
+}
+
+.promo__step {
+  margin: 0 -25px;
+  padding: 0 25px 40px 25px;
+
+  background: linear-gradient(to bottom, $c-portGore 80px, $c-bigStone 80px);
 }
 
 @media (min-width: $tablet-width) {
   .promo {
+    background-color: $c-bigStone;
     background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
   }
 
@@ -51,16 +73,32 @@
   }
 
   .promo__slogan {
+    align-self: center;
+    width: 400px;
+    margin-bottom: 100px;
+
     font-size: 60px;
     line-height: 70px;
   }
 
-  .promo__contact {
+  .promo__user-nav {
     display: none;
   }
 
   .promo__review {
-    margin-left: 35px;
+    margin: 0;
+    margin-bottom: 200px;
+    margin-left: 30px;
+    padding: 0;
+
+    background-color: transparent;
+  }
+
+  .promo__step {
+    margin: 0;
+    padding: 0;
+
+    background: none;
   }
 }
 

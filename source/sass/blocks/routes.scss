@@ -1,4 +1,7 @@
 .routes {
+  display: flex;
+  flex-direction: column;
+
   background-color: $c-whisper;
 }
 
@@ -11,6 +14,10 @@
 }
 
 .routes__text {
+  box-sizing: border-box;
+  width: 220px;
+  padding-left: 25px;
+
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
@@ -31,4 +38,33 @@
 
   background-color: $c-mustard;
   border-radius: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .routes {
+    background-image: url("../../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+
+  .routes__caption {
+    padding-left: 35px;
+
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .routes__text {
+    width: 380px;
+    padding-left: 35px;
+
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .routes__country {
+    order: -1;
+  }
 }

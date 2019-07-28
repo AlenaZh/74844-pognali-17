@@ -2,12 +2,32 @@
   padding: 0;
 
   list-style: none;
-}
-
-.price__item {
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-family: "bloggersans-light", "Arial", sans-serif;
   color: $c-tundora;
+}
+
+.price__item {
+  display: flex;
+  flex-flow: column;
+}
+
+
+@media (min-width: $tablet-width) {
+  .price__item {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  .price__list {
+    font-size: 28px;
+    line-height: 33px;
+
+    &--business {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
 }

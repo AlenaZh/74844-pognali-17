@@ -1,7 +1,15 @@
 .level {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
   color: $c-white;
 
   background-color: rgba($c-black, 0.6);
+  border-radius: 50%;
 
   &--dark {
     color: $c-cello;

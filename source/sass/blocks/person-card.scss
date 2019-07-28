@@ -1,5 +1,15 @@
 .person-card {
+  position: relative;
+
+  padding-bottom: 20px;
+
   background-color: $c-white;
+}
+
+.person-card__level {
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
 .person-card__name {
@@ -7,7 +17,16 @@
   font-size: 21px;
   line-height: 21px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: center;
   color: $c-cello;
+}
+
+.person-card__image {
+  display: block;
+  width: 270px;
+  height: 270px;
+
+  background-color: $c-tundora;
 }
 
 .person-card__distance {
@@ -51,4 +70,15 @@
 
   background-color: $c-mustard;
   border-radius: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .person-card {
+    width: 286px;
+  }
+
+  .person-card__image {
+    width: 286px;
+    height: 286px;
+  }
 }

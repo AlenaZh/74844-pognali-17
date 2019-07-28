@@ -2,15 +2,40 @@
   background-color: $c-whisper;
 }
 
+.tariffs__container {
+  display: flex;
+  flex-flow: column;
+}
+
 .tariffs__caption {
+  width: 130px;
+  padding-left: 25px;
+
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
   font-family: "bloggersans-bold", "Arial", sans-serif;
   color: $c-neonCarrot;
+
+  &--modal {
+    width: auto;
+    padding: 0;
+
+    text-align: center;
+  }
+}
+
+.tariffs__price {
+  align-self: flex-start;
+  width: 200px;
 }
 
 .tariffs__business {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 25px;
+
   background-color: $c-white;
 }
 
@@ -31,5 +56,39 @@
     border: none;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .tariffs__business {
+    padding: 0 90px;
+  }
+
+  .tariffs__caption {
+    width: auto;
+    padding: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .tariffs__price {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .tariffs__button {
+    font-size: 20px;
+    line-height: 20px;
+    color: $c-deepKoamaru;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__business {
+    width: 750px;
+    padding: 0 60px;
   }
 }

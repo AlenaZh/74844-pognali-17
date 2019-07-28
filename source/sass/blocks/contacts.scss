@@ -2,6 +2,12 @@
   background-color: $c-bigStone;
 }
 
+.contacts__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .contacts__caption {
   font-style: normal;
   font-size: 24px;
@@ -15,9 +21,32 @@
   font-size: 16px;
   line-height: 22px;
   font-family: "bloggersans-light", "Arial", sans-serif;
+  text-align: center;
   color: $c-white;
 }
 
 .contacts__link {
   color: $c-mustard;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__caption {
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .contacts__text {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .contacts__contact {
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__contact {
+    align-self: center;
+  }
 }
