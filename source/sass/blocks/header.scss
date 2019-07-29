@@ -2,10 +2,22 @@
   display: flex;
   flex-flow: column;
   box-sizing: border-box;
+  box-sizing: border-box;
   width: 320px;
+  min-height: 74px;
   margin: 0 auto;
 
-  background-color: $c-portGore;
+  background-color: $c-white;
+
+  &--opened {
+    .header__navigation {
+      position: absolute;
+    }
+  }
+
+  &--closed {
+    background-color: $c-portGore;
+  }
 }
 
 .header__wrapper {
@@ -13,11 +25,96 @@
   flex-flow: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 0 25px;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.header__logo {
+  display: flex;
+  flex-flow: column;
+}
+
+.header__inner {
+  position: relative;
+
+  display: flex;
+}
+
+.header__toggle {
+  position: relative;
+
+  width: 25px;
+  height: 25px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 28px;
+    height: 2px;
+
+    background-color: $c-silver;
+  }
+
+  &--opened {
+    &::before,
+    &::after {
+      left: -2px;
+
+      width: 30px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--closed {
+    &::before {
+      top: 7px;
+      left: 0;
+
+      width: 25px;
+    }
+
+    &::after {
+      bottom: 8px;
+      left: 0;
+
+      width: 25px;
+    }
+  }
+}
+
+.header__icon {
+  fill: $c-white;
 }
 
 .header__auth {
   display: none;
+  width: 188px;
+  height: 50px;
+
+  font-size: 20px;
+  line-height: 50px;
+  font-family: "bloggersans-bold";
+  text-align: center;
+  color: $c-portGore;
+  text-transform: uppercase;
+
+  background-color: $c-mustard;
+  border-radius: 25px;
 }
 
 .header__position {
@@ -31,10 +128,11 @@
 @media (min-width: $tablet-width) {
   .header {
     width: 768px;
+    min-height: 132px;
   }
 
   .header__wrapper {
-    padding: 0 40px;
+    padding: 40px;
   }
 
   .header__auth {
@@ -42,16 +140,62 @@
   }
 }
 
+@media (max-width: $desktop-width - 1px) {
+  .header--closed {
+    background-color: $c-portGore;
+
+    .header__navigation {
+      display: none;
+    }
+
+    .header__toggle {
+      &::before,
+      &::after {
+        background-color: $c-white;
+      }
+    }
+  }
+
+  .header--nojs {
+    background-color: $c-white;
+
+    .header__toggle {
+      display: none;
+    }
+
+    .header__navigation {
+      position: static;
+
+      display: flex;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .header {
     flex-flow: row;
     flex-wrap: nowrap;
+    box-sizing: border-box;
     width: 1440px;
+    min-height: 120px;
     padding: 0 60px;
+    padding-top: 30px;
+
+    background-color: $c-portGore;
+
+    &--opened {
+      .header__navigation {
+        position: static;
+      }
+    }
   }
 
   .header__wrapper {
     padding: 0;
+  }
+
+  .header__inner {
+    flex-grow: 1;
   }
 
   .header__auth {

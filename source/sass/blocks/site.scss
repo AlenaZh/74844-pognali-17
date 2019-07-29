@@ -1,9 +1,12 @@
 .site {
+  display: flex;
+
   font-style: normal;
   font-size: 30px;
   line-height: 36px;
   font-family: "bloggersans-medium", "Arial", sans-serif;
   color: $c-bigStone;
+  text-transform: uppercase;
 }
 
 .site__list {
@@ -13,6 +16,10 @@
   padding: 0;
 
   list-style: none;
+}
+
+.site__item {
+  display: flex;
 }
 
 .site__link {
@@ -40,5 +47,10 @@
   .site__list {
     flex-flow: row;
     flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .site__item:not(:last-of-type) {
+    margin-right: 36px;
   }
 }

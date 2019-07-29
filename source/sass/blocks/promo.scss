@@ -2,7 +2,7 @@
   padding-top: 20px;
 
   background-color: $c-portGore;
-  background-image: url("../../img/traveller-illustration-mobile@1x.png"), url("../../img/globe-back-mobile@1x.jpg");
+  background-image: url("../../img/traveller.png"), url("../../img/globe-back.jpg");
   background-repeat: no-repeat;
   background-position: 76px 140px, center -79px;
 }
@@ -30,6 +30,10 @@
   margin-top: 240px;
 }
 
+.promo__contact .contact__list {
+  flex-flow: row;
+}
+
 .promo__auth {
   display: block;
   padding: 0 40px;
@@ -49,7 +53,7 @@
 .promo__review {
   margin: 0 -25px;
   margin-top: -20px;
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 30px;
 
   background-color: $c-portGore;
@@ -64,8 +68,10 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    padding-top: 38px;
+
     background-color: $c-bigStone;
-    background-image: url("../../img/traveller-illustration-tablet@1x.png"), url("../../img/globe-back-tablet@1x.jpg");
+    background-image: url("../../img/traveller.png"), url("../../img/globe-back.jpg");
   }
 
   .promo__auth {
@@ -87,7 +93,7 @@
 
   .promo__review {
     margin: 0;
-    margin-bottom: 200px;
+    margin-bottom: 210px;
     margin-left: 30px;
     padding: 0;
 
@@ -104,6 +110,33 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    background-image: url("../../img/traveller-illustration-desktop@1x.png"), url("../../img/globe-back-desktop@1x.jpg");
+    padding-top: 100px;
+    padding-bottom: 124px;
+
+    background-color: $c-portGore;
+    background-image: url("../../img/traveller.png"), url("../../img/globe-back.jpg");
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .promo__container {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .promo__slogan {
+    margin-bottom: 0;
+
+    text-align: left;
+  }
+
+  .promo__review {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  .promo__step {
+    margin-top: 100px;
   }
 }
