@@ -108,6 +108,7 @@
     line-height: 28px;
   }
   .contact__link {
+
     &::before {
       width: 68px;
       height: 68px;
@@ -142,6 +143,7 @@
       height: 36px;
     }
   }
+
   .main-navigation__contact {
     .contact__link {
       &--phone {
