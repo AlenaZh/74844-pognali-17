@@ -1,0 +1,21 @@
+.map__image {
+  display: block;
+  width: 320px;
+  height: 342px;
+
+  background-color: $c-whisper;
+}
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    width: 768px;
+    height: 580px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__image {
+    width: 1440px;
+    height: 516px;
+  }
+}

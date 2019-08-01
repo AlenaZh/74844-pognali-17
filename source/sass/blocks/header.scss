@@ -125,10 +125,18 @@
   color: $c-white;
 }
 
+@media (max-width: $tablet-width - 1px) {
+  .header--closed {
+    background-color: $c-portGore;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .header {
     width: 768px;
     min-height: 132px;
+
+    background-color: $c-bunting;
   }
 
   .header__wrapper {
@@ -140,10 +148,14 @@
   }
 }
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .header--closed {
+    background-color: $c-bunting;
+  }
+}
+
 @media (max-width: $desktop-width - 1px) {
   .header--closed {
-    background-color: $c-portGore;
-
     .header__navigation {
       display: none;
     }

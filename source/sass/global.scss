@@ -1,4 +1,6 @@
 body {
+  position: relative;
+
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@ body {
   font-family: "bloggersans", "Arial", sans-serif;
   color: $c-tundora;
 
-  background-color: $c-whisper;
+  background-color: $c-white;
 }
 
 a {

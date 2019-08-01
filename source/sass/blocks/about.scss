@@ -1,4 +1,7 @@
 .about {
+  position: relative;
+  z-index: 9;
+
   padding-top: 30px;
   padding-bottom: 80px;
 
@@ -6,6 +9,8 @@
   background-image: url("../../img/about.png");
   background-repeat: no-repeat;
   background-position: center;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .about__inner {
@@ -54,13 +59,18 @@
 
 @media (min-width: $tablet-width) {
   .about {
+    padding-top: 40px;
+    padding-bottom: 88px;
+
     background-image: url("../../img/about.png");
     background-position: right;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
   }
 
   .about__inner {
     box-sizing: border-box;
-    width: 340px;
+    width: 335px;
     margin: 0;
     padding-left: 33px;
   }
@@ -82,21 +92,33 @@
 
   .about__button {
     display: block;
+    margin-top: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    padding-top: 130px;
+    margin-top: -60px;
+    padding-top: 130px + 60px;
     padding-bottom: 160px;
 
     background-image: url("../../img/about.png");
     background-position: right;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 
   .about__inner {
     width: 690px;
     margin: 0;
     padding-left: 70px;
+  }
+
+  .about__caption {
+    margin-bottom: 60px;
+  }
+
+  .about__button {
+    margin-top: 85px;
   }
 }

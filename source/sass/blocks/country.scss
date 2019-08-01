@@ -5,11 +5,12 @@
 .country__list {
   display: flex;
   flex-flow: column;
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
-.country__item {
+.country__item:not(:last-of-type) {
   margin-bottom: 10px;
 }

@@ -1,6 +1,7 @@
 .person__list {
   display: flex;
   flex-flow: column;
+  margin-top: 0;
   padding: 0;
 
   list-style: none;
@@ -14,5 +15,10 @@
   .person__list {
     flex-flow: row;
     justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .person__item {
+    margin-bottom: 0;
   }
 }

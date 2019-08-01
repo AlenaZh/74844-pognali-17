@@ -140,13 +140,14 @@
       </div>
     </section>
 
-    <div class="container">
-      <section class="routes">
 
-        <h2 class="routes__caption">Направления</h2>
+    <section class="routes">
+      <div class="routes__container container">
+        <div class="routes__inner">
+          <h2 class="routes__caption">Направления</h2>
 
-        <p class="routes__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-
+          <p class="routes__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        </div>
         <div class="routes__country country">
           <ul class="country__list">
             <li class="country__item country-card">
@@ -183,8 +184,9 @@
         </div>
 
         <a class="routes__button button button--big" href="#">Показать все</a>
-      </section>
-    </div>
+      </div>
+    </section>
+
     <section class="companions">
       <div class="companions__container container">
         <div class="companions__inner">
@@ -331,7 +333,7 @@
 
     <section class="tariffs">
       <div class="tariffs__container container">
-        <h2 class="tariffs__caption">Добавтьте свой профиль</h2>
+        <h2 class="tariffs__caption">Добавтьте свой профиль!</h2>
 
         <div class="tariffs__price price">
           <ul class="price__list">
@@ -349,32 +351,10 @@
             </li>
           </ul>
         </div>
-        <a class="tariffs__button" href="#">Показать тарифы для бизнеса</a>
+        <a class="tariffs__button" href="#">
+          <p>Показать тарифы для бизнеса</p>
+        </a>
 
-        <div class="tariffs__business">
-          <h3 class="tariffs__caption tariffs__caption--modal">Бизнес-тарифы</h3>
-          <div class="tariffs__price price">
-            <ul class="price__list price__list--business">
-              <li class="price__item">
-                <p class="price__name">Реклама у блоггера</p>
-                <p class="price__value">300 000 руб./пост</p>
-              </li>
-              <li class="price__item">
-                <p class="price__name">Накрутка подписчиков</p>
-                <p class="price__value">от 1 руб./шт.</p>
-              </li>
-              <li class="price__item">
-                <p class="price__name">Лайки от ботов</p>
-                <p class="price__value">от 20 коп./лайк</p>
-              </li>
-              <li class="price__item">
-                <p class="price__name">Ваш продакт-плейсмент</p>
-                <p class="price__value">Индивидуально</p>
-              </li>
-            </ul>
-          </div>
-          <button class="tariffs__button tariffs__button--modal" type="button">Закрыть окно</button>
-        </div>
     </section>
 
     <section class="contacts">
@@ -382,13 +362,16 @@
         <h2 class="visually-hidden">Связаться с нами</h2>
 
         <p class="contacts__caption">Заинтересовались?</p>
-        <p class="contacts__text">Зарегистрируйтесь,это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contacts__link" href="#">авторизуйтесь</a>.</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="email" name="email" placeholder="email">
-          <button type="submit">Регистрация</button>
+        <p class="contacts__text">Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a class="contacts__link" href="#">авторизуйтесь</a>.</p>
+        <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="contacts-email">Ваш e-mail:</label>
+          <input class="contacts__email" id="contact-email" type="email" name="email" value="" placeholder="E-mail">
+          <button class="contacts__submit" type="submit">
+            <p>Регистрация</p>
+          </button>
         </form>
-        <p class="contacts__text">Остались вопросы? Мы с радостью на них ответим!</p>
-
+        <p class="contacts__text contacts__text--mobile-tablet">Остались вопросы? Мы с радостью на них ответим!</p>
+        <p class="contacts__text contacts__text--desktop">Остались вопросы? Свяжитесь с нами удобным для вас способом:</p>
         <div class="contacts__contact contact">
           <ul class="contact__list">
             <li class="contact__item">
@@ -412,7 +395,9 @@
         <address class="location__address">ул. Большая Конюшенная, 19/8</address>
         <a class="location__button button button--big button--border" href="#">Проложить маршрут</a>
       </div>
-      <img src="img/map.jpg" width="100" height="100" alt="Офис Погнали! по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+      <div class="location__map map">
+        <img class="map__image" src="img/map.jpg" width="320" height="342" alt="Офис Погнали! по адресу: Санкт-Петербург, ул. Большая Конюшенная, 19/8">
+      </div>
     </section>
   </main>
 
@@ -447,6 +432,34 @@
       </a>
     </div>
   </footer>
+
+  <section class="business">
+    <div class="business__inner">
+      <h3 class="business__caption">Бизнес-тарифы</h3>
+      <div class="business__price price">
+        <ul class="price__list">
+          <li class="price__item">
+            <p class="price__name">Реклама у блоггера</p>
+            <p class="price__value">300 000 руб./пост</p>
+          </li>
+          <li class="price__item">
+            <p class="price__name">Накрутка подписчиков</p>
+            <p class="price__value">от 1 руб./шт.</p>
+          </li>
+          <li class="price__item">
+            <p class="price__name">Лайки от ботов</p>
+            <p class="price__value">от 20 коп./лайк</p>
+          </li>
+          <li class="price__item">
+            <p class="price__name">Ваш продакт-плейсмент</p>
+            <p class="price__value">Индивидуально</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="business__button" type="button">Закрыть окно</button>
+
+  </section>
   <script src="js/script.js"></script>
 </body>
 

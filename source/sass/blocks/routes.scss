@@ -1,11 +1,27 @@
 .routes {
+  position: relative;
+  z-index: 8;
+
   display: flex;
   flex-direction: column;
+  margin-top: -25px;
+  padding-top: 70px + 25px;
+  padding-bottom: 30px;
 
   background-color: $c-whisper;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.routes__inner {
+  width: 220px;
+  margin-bottom: 60px;
+  padding-left: 26px;
 }
 
 .routes__caption {
+  margin-top: 0;
+
   font-style: normal;
   font-size: 24px;
   line-height: 24px;
@@ -15,14 +31,16 @@
 
 .routes__text {
   box-sizing: border-box;
-  width: 220px;
-  padding-left: 25px;
 
   font-style: normal;
   font-size: 16px;
   line-height: 22px;
   font-family: "bloggersans-light", "Arial", sans-serif;
   color: $c-tundora;
+}
+
+.routes__country {
+  margin-bottom: 25px;
 }
 
 .routes__button {
@@ -37,26 +55,52 @@
   color: $c-cello;
 
   background-color: $c-mustard;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 @media (min-width: $tablet-width) {
   .routes {
-    background-image: url("../../img/flags-back@1x.png");
+    margin-top: -40px;
+    padding-top: 75px + 40px;
+    padding-bottom: 80px;
+
+    background-image: url("../../img/flags.png");
     background-repeat: no-repeat;
     background-position: right top;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  .routes__container {
+    padding: 0 40px + 35px;
+  }
+
+  .routes__button {
+    font-size: 24px;
+    line-height: 80px;
+
+    border-radius: 20px;
+  }
+
+  .routes__inner {
+    width: 350px;
+    margin-bottom: 110px;
+    padding: 0;
   }
 
   .routes__caption {
-    padding-left: 35px;
+    margin-bottom: 60px;
 
     font-size: 45px;
     line-height: 45px;
   }
 
+  .routes__country {
+    margin-bottom: 46px;
+  }
+
   .routes__text {
-    width: 380px;
-    padding-left: 35px;
+    margin: 0;
 
     font-size: 28px;
     line-height: 33px;
@@ -64,7 +108,44 @@
 }
 
 @media (min-width: $desktop-width) {
+  .routes {
+    margin-top: -60px;
+    padding-top: 160px + 60px;
+    padding-bottom: 140px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .routes__container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  .routes__inner {
+    box-sizing: border-box;
+    width: calc(630/1320*100%);
+    margin-bottom: 0;
+    padding-right: calc(170/1320*100%);
+    padding-left: calc(115/1320*100%);
+  }
+
   .routes__country {
     order: -1;
+    box-sizing: border-box;
+    width: calc(690/1320*100%);
+    margin-bottom: 0;
+    padding-right: calc(60/1320*100%);
+    padding-left: calc(72/1320*100%);
+  }
+
+  .routes__button {
+    box-sizing: border-box;
+    width: 280px;
+    margin-top: -80px;
+    margin-left: calc(805/1320*100%);
+    padding-left: 34px;
   }
 }
