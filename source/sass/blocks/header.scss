@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column;
   box-sizing: border-box;
-  box-sizing: border-box;
   width: 320px;
   min-height: 74px;
   margin: 0 auto;
@@ -108,7 +107,7 @@
 
   font-size: 20px;
   line-height: 50px;
-  font-family: "bloggersans-bold";
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   text-align: center;
   color: $c-portGore;
   text-transform: uppercase;

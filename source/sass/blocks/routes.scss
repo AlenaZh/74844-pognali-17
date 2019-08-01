@@ -126,26 +126,26 @@
 
   .routes__inner {
     box-sizing: border-box;
-    width: calc(630/1320*100%);
+    width: calc(630 / 1320 * 100%);
     margin-bottom: 0;
-    padding-right: calc(170/1320*100%);
-    padding-left: calc(115/1320*100%);
+    padding-right: calc(170 / 1320 * 100%);
+    padding-left: calc(115 / 1320 * 100%);
   }
 
   .routes__country {
     order: -1;
     box-sizing: border-box;
-    width: calc(690/1320*100%);
+    width: calc(690 / 1320 * 100%);
     margin-bottom: 0;
-    padding-right: calc(60/1320*100%);
-    padding-left: calc(72/1320*100%);
+    padding-right: calc(60 / 1320 * 100%);
+    padding-left: calc(72 / 1320 * 100%);
   }
 
   .routes__button {
     box-sizing: border-box;
     width: 280px;
     margin-top: -80px;
-    margin-left: calc(805/1320*100%);
+    margin-left: calc(805 / 1320 * 100%);
     padding-left: 34px;
   }
 }

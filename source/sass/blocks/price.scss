@@ -30,7 +30,7 @@
   flex-flow: column;
   padding: 15px 0;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     right: -34px - 10px;
@@ -48,19 +48,19 @@
     border-radius: 50%;
   }
 
-  &:nth-of-type(1):before {
+  &:nth-of-type(1)::before {
     content: "1";
 
     background-color: $c-sunshade;
   }
 
-  &:nth-of-type(2):before {
+  &:nth-of-type(2)::before {
     content: "2";
 
     background-color: $c-sunglow;
   }
 
-  &:nth-of-type(3):before {
+  &:nth-of-type(3)::before {
     content: "3";
 
     background-color: $c-mustard;
