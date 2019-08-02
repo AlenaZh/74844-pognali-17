@@ -5,6 +5,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 0 25px;
+  padding-bottom: 40px;
 
   background-color: $c-white;
 }
@@ -25,6 +26,10 @@
   border-radius: 25px;
 }
 
+.main-navigation__wrapper {
+  margin-bottom: 40px;
+}
+
 .main-navigation__contact {
   display: flex;
   flex-flow: column;
@@ -33,6 +38,11 @@
 @media (min-width: $tablet-width) {
   .main-navigation {
     padding: 0 100px;
+    padding-bottom: 90px;
+  }
+
+  .main-navigation__wrapper {
+    margin-bottom: 132px;
   }
 
   .main-navigation__auth {
@@ -46,6 +56,10 @@
     padding: 0;
 
     background-color: $c-portGore;
+  }
+
+  .main-navigation__wrapper {
+    margin-bottom: 0;
   }
 
   .main-navigation__site {

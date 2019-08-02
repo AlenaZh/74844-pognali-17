@@ -107,6 +107,15 @@
   .companions__person {
     margin-bottom: 80px;
   }
+
+  .companions__button {
+    padding: 0 34px;
+
+    font-size: 24px;
+    line-height: 80px;
+
+    border-radius: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -146,11 +155,5 @@
     width: 280px;
     margin-top: -80px;
     margin-left: 70px;
-    padding-left: 34px;
-
-    font-size: 24px;
-    line-height: 80px;
-
-    border-radius: 20 px;
   }
 }

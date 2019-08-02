@@ -1,4 +1,7 @@
 .header {
+  position: relative;
+  z-index: 20;
+
   display: flex;
   flex-flow: column;
   box-sizing: border-box;
@@ -135,7 +138,11 @@
     width: 768px;
     min-height: 132px;
 
-    background-color: $c-bunting;
+    &--closed {
+      .header {
+        background-color: $c-bunting;
+      }
+    }
   }
 
   .header__wrapper {
