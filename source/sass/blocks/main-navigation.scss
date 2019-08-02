@@ -58,10 +58,6 @@
     background-color: $c-portGore;
   }
 
-  .main-navigation__wrapper {
-    margin-bottom: 0;
-  }
-
   .main-navigation__site {
     padding-left: 147px;
 
@@ -106,6 +102,7 @@
   .main-navigation__wrapper {
     display: flex;
     align-items: center;
+    margin-bottom: 0;
     margin-left: auto;
   }
 
