@@ -8,76 +8,86 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header class="header container">
+<body class="catalog-page">
+  <header class="catalog-page__header header header--opened header--nojs">
     <div class="header__wrapper">
       <a class="header__logo logo" href="#">
-        <img class="logo__image" src="img/logo.svg" width="100" height="19" alt="Логотип Погнали!">
+        <img class="logo__image" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип Погнали!">
       </a>
-      <button class="header__toggle" type="button">Открыть меню</button>
+      <button class="header__toggle header__toggle--closed" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
       <a class="header__auth" href="#">Авторизация</a>
     </div>
 
-    <nav class="main-navigation">
-      <div class="main-navigation__site site">
-        <ul class="site__list">
-          <li class="site__item">
-            <a class="site__link" href="index.html">О сервисе</a>
-          </li>
-          <li class="site__item">
-            <a class="site__link" href="form.html">Направления</a>
-          </li>
-          <li class="site__item">
-            <a class="site__link" href="#">Попутчики</a>
-          </li>
-        </ul>
-      </div>
+    <div class="header__inner">
+      <nav class="header__navigation main-navigation">
+        <div class="main-navigation__site site">
+          <ul class="site__list">
+            <li class="site__item">
+              <a class="site__link" href="#">О сервисе</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="form.html">Направления</a>
+            </li>
+            <li class="site__item">
+              <a class="site__link" href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+        </div>
 
-      <a class="main-navigation__auth button" href="#">Авторизация</a>
+        <div class="main-navigation__wrapper">
+          <a class="main-navigation__auth" href="#">Авторизация</a>
 
-      <div class="main-navigation__contact contact ">
-        <ul class="contact__list">
-          <li class="contact__item">
-            <a class="contact__link contact__link--phone contact__link--phone--without-text
-                " href="tel:88005558628">
-              <span class="contact__text contact__text--hide">8 800 555-86-28</span>
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__link contact__link--email contact__link--email--without-text" href="mailto:mail@htmlacademy.ru">
-              <span class="contact__text contact__text--hide">mail@htmlacademy.ru</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+          <div class="main-navigation__contact contact ">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a class="contact__link contact__link--phone" href="tel:88005558628">
+                  <span class="contact__text">8 800 555-86-28</span>
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link contact__link--email" href="mailto:mail@htmlacademy.ru">
+                  <span class="contact__text">mail@htmlacademy.ru</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="main-navigation__social social ">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">"Погнали!" в Фейсбуке</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">
-              <span class="visually-hidden">"Погнали!" в ВКонтакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">"Погнали!" в Инстаграмм</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <div class="main-navigation__social social ">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">"Погнали!" в Фейсбуке</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#">
+                <span class="visually-hidden">"Погнали!" в ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#">
+                <span class="visually-hidden">"Погнали!" в Инстаграмм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="header__position">
+      <p>Попутчики</p>
+      <a href="index.html">На главную</a>
+    </div>
 
-    <p class="header__position">Попутчики</p>
   </header>
 
   <main class="main">
     <h1 class="visually-hidden">Попутчики</h1>
-
+    <!--
     <section class="partner">
       <h2 class="visually-hidden">Список попутчиков</h2>
       <div class="partner-person person">
@@ -356,7 +366,7 @@
       <a class="partner__button partner__button--back" href="#">Назад</a>
       <a class="partner__button partner__button--next" href="#">Вперед</a>
 
-    </section>
+    </section>-->
   </main>
 
   <footer class="footer">
@@ -385,11 +395,12 @@
     <div class="footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="#">
-        <img class="copyright__logo" src="//htmlacademy.ru/intensive/adaptive" width="27" height="34" alt="Логотип HTML Academy">
+        <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>

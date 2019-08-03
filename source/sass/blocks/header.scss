@@ -38,8 +38,58 @@
 
 .header__inner {
   position: relative;
+  z-index: 1;
 
   display: flex;
+  flex-flow: column;
+}
+
+.header__position {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  padding: 0 25px;
+
+  p {
+    position: relative;
+
+    display: inline-block;
+    margin: 0;
+
+    font-style: normal;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
+    color: $c-white;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -12px - 4px;
+      left: 0;
+
+      width: 100%;
+      height: 8px;
+
+      background-color: $c-neonCarrot;
+      border-radius: 4px;
+    }
+  }
+
+  a {
+    display: none;
+    padding-right: 60px;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
+    color: $c-white;
+    text-transform: uppercase;
+  }
 }
 
 .header__toggle {
@@ -119,14 +169,6 @@
   border-radius: 25px;
 }
 
-.header__position {
-  font-style: normal;
-  font-size: 36px;
-  line-height: 40px;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
-  color: $c-white;
-}
-
 @media (max-width: $tablet-width - 1px) {
   .header--closed {
     background-color: $c-portGore;
@@ -139,14 +181,32 @@
     min-height: 132px;
 
     &--closed {
-      .header {
-        background-color: $c-bunting;
-      }
+      background-color: $c-bunting;
     }
   }
 
   .header__wrapper {
     padding: 40px;
+  }
+
+  .header__position {
+    justify-content: space-between;
+    margin-top: 96px;
+    margin-bottom: 70px;
+    padding: 0 75px;
+
+    p {
+      font-size: 60px;
+      line-height: 70px;
+
+      &::after {
+        bottom: -70px - 4px;
+      }
+    }
+
+    a {
+      display: inline-block;
+    }
   }
 
   .header__auth {
@@ -192,7 +252,7 @@
 @media (min-width: $desktop-width) {
   .header {
     flex-flow: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     box-sizing: border-box;
     width: 1440px;
     min-height: 120px;
@@ -214,6 +274,18 @@
 
   .header__inner {
     flex-grow: 1;
+  }
+
+  .header__position {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    padding: 0 63px;
+
+    p {
+      &::after {
+        bottom: -70px - 4px;
+      }
+    }
   }
 
   .header__auth {
