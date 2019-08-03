@@ -1,18 +1,8 @@
-.catalog-page__header {
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-}
-
 
 @media (min-width: $tablet-width) {
   .catalog-page {
     .header--closed {
       background-color: $c-portGore;
     }
-  }
-
-  .catalog-page__header {
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
   }
 }
