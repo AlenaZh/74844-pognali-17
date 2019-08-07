@@ -1,0 +1,49 @@
+.enumeration-group__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &:not(:first-of-type) {
+    display: none;
+  }
+}
+
+.enumeration-group__item {
+  a {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 12px;
+    font-family: "bloggersans", "Arial", sans-serif;
+    color: $c-tundora;
+  }
+}
+
+.enumeration-group__letter {
+  display: none;
+
+  font-size: 60px;
+  line-height: 78px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-bigStone;
+}
+
+@media (min-width: $tablet-width) {
+  .enumeration-group__item {
+    a {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .enumeration-group__letter {
+    display: inline;
+  }
+
+  .enumeration-group__list:nth-of-type(n) {
+    display: block;
+    width: 210px;
+  }
+}

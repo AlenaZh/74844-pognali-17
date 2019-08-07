@@ -29,25 +29,71 @@
   background-color: $c-tundora;
 }
 
-.person-card__distance {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 21px;
-  font-family: "bloggersans-bold", "Arial", sans-serif;
-  color: $c-cello;
+.person-card__indicator {
+  width: 6px;
+  height: 6px;
+  margin-top: 23px;
+  margin-right: 22px;
+  margin-left: auto;
+
+  border-radius: 3px;
+
+  &--offline {
+    background-color: $c-froly;
+  }
+
+  &--online {
+    background-color: $c-lima;
+  }
 }
 
 .person-card__section {
+  position: relative;
+
+  width: 100%;
+
   font-style: normal;
   font-size: 15px;
   line-height: 18px;
   font-family: "bloggersans", "Arial", sans-serif;
   color: $c-tundora;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $c-whisper;
+  }
+}
+
+.person-card__section-text {
+  position: relative;
+
+  margin-left: 10px;
+  padding: 0 12px;
+
   background-color: $c-white;
 }
 
 .person-card__like {
+  position: absolute;
+  top: 54px;
+  left: 67px;
+
+  display: flex;
+  flex-grow: row;
+  align-items: center;
+}
+
+.person-card__like-button {
+  width: 31px;
+  height: 31px;
+  margin-right: 8px;
+
   background-color: $c-whisper;
   border: none;
   border-radius: 50%;
@@ -55,6 +101,16 @@
   &--current {
     background-color: $c-fantasy;
   }
+}
+
+.person-card__like-count {
+  margin: 0;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-cello;
 }
 
 .person-card__button {
@@ -72,6 +128,115 @@
   border-radius: 15px;
 }
 
+.partner__person {
+  .person-card {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+  }
+
+  .person-card__wrapper {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .person-card__wrapper-name {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+  }
+
+  .person-card__image-link {
+    position: absolute;
+
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    margin-right: 16px;
+    margin-left: 18px;
+  }
+
+  .person-card__image {
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+  }
+
+  .person-card__name-link {
+    width: 120px;
+    margin-top: 15px;
+    padding-left: 104px;
+  }
+
+  .person-card__name {
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .person-card__hashtags {
+    margin-top: 45px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+
+  .person-card__flag {
+    width: 100%;
+    margin-left: 24px;
+  }
+
+  .person-card__inner {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .person-card__transport {
+    order: 1;
+    margin-left: 24px;
+  }
+
+  .person-card__level {
+    position: initial;
+
+    order: 1;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    margin-left: auto;
+  }
+
+  .person-card__section {
+    &--transport {
+      width: 150px;
+    }
+
+    &--level {
+      display: flex;
+      justify-content: flex-end;
+      width: 120px;
+    }
+  }
+  .person-card__buttons {
+    width: 100%;
+    margin-top: 14px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .person-card__button {
+    width: 100%;
+
+    border-radius: 20px;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .person-card {
     width: 286px;
@@ -80,5 +245,212 @@
   .person-card__image {
     width: 286px;
     height: 286px;
+  }
+
+  .partner__person {
+    .person-card {
+      width: 100%;
+      padding: 35px 0 25px 0;
+    }
+
+    .person-card__wrapper {
+      align-content: flex-start;
+      width: 310px;
+      padding-right: 30px;
+      padding-left: 260px;
+    }
+
+    .person-card__like {
+      position: static;
+    }
+
+    .person-card__image-link {
+      top: 35px;
+      left: 35px;
+
+      width: 190px;
+      height: 190px;
+      margin: 0;
+    }
+
+    .person-card__image {
+      width: 190px;
+      height: 190px;
+
+      border-radius: 20px;
+    }
+
+    .person-card__name-link {
+      width: auto;
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-left: 0;
+    }
+
+    .person-card__name {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    .person-card__indicator {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: 22px;
+    }
+
+    .person-card__hashtags {
+      width: 240px;
+      margin: 0;
+      margin-right: auto;
+    }
+
+    .person-card__transport {
+      margin-left: 0;
+    }
+
+    .person-card__section {
+      order: 1;
+      margin: 20px 0;
+    }
+
+    .person-card__section-text {
+      margin-left: 70px;
+    }
+
+    .person-card__flag {
+      order: 1;
+      margin-left: 35px;
+    }
+
+    .person-card__inner {
+      position: relative;
+
+      flex-flow: column;
+      width: 60px;
+    }
+    .person-card__buttons {
+      position: relative;
+      left: 260px;
+
+      display: flex;
+      flex-flow: row;
+      width: auto;
+      margin: 0;
+    }
+
+    .person-card__button {
+      width: 148px;
+      height: 50px;
+
+      font-size: 20px;
+      line-height: 50px;
+
+      border-radius: 25px;
+    }
+
+    .person-card__section {
+      &--transport {
+        display: none;
+      }
+
+      &--level {
+        display: none;
+      }
+    }
+
+    .person-card__like-button {
+      width: 50px;
+      height: 50px;
+    }
+
+    .person-card__like-count {
+      font-size: 20px;
+    }
+
+    .person-card__level {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .partner__person {
+    .person-card {
+      box-sizing: border-box;
+      min-height: 285px;
+      padding-top: 50px;
+      padding-right: 40px;
+      padding-bottom: 48px;
+      padding-left: 345px;
+    }
+
+    .person-card__wrapper {
+      padding-left: 0;
+    }
+
+    .person-card__section {
+      display: none;
+    }
+
+    .person-card__image {
+      width: 285px;
+      height: 285px;
+
+      border-radius: 0;
+    }
+
+    .person-card__indicator {
+      position: absolute;
+
+      margin: 0;
+      margin-top: 9px;
+      margin-left: -20px;
+    }
+
+    .person-card__image-link {
+      top: 0;
+      left: 0;
+
+      width: 285px;
+      height: 285px;
+      margin: 0;
+    }
+
+    .person-card__name-link {
+      width: 330px;
+      padding: 0;
+    }
+
+    .person-card__hashtags {
+      width: 330px;
+      padding: 0;
+    }
+
+    .person-card__buttons {
+      position: static;
+
+      align-self: flex-end;
+      width: 330px;
+    }
+
+    .person-card__flag {
+      order: 0;
+      width: 225px;
+      margin-left: 0;
+    }
+
+    .person-card__inner {
+      position: static;
+
+      flex-flow: row;
+      align-items: center;
+      order: 1;
+      align-self: flex-end;
+      width: 234px;
+    }
+
+    .person-card__level {
+      margin-right: 0;
+    }
   }
 }

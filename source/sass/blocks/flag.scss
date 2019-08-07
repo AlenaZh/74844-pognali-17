@@ -28,3 +28,39 @@
     background-color: $c-blueZodiac;
   }
 }
+
+.partner__person {
+  .flag__list {
+    flex-flow: column;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .partner__person {
+    .flag__list {
+      flex-flow: row;
+      justify-content: left;
+    }
+
+    .flag__name {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .flag__item:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .partner__person {
+    .flag__list {
+      flex-flow: column;
+    }
+
+    .flag__item:nth-of-type(n) {
+      margin-right: 0;
+    }
+  }
+}

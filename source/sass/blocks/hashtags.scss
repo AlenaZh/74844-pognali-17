@@ -19,3 +19,22 @@
 .hashtags__link {
   color: inherit;
 }
+
+.partner__person {
+  .hashtags__list {
+    justify-content: flex-start;
+  }
+
+  .hashtags__item {
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .partner__person {
+    .hashtags {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

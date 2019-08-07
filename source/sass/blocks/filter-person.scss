@@ -1,0 +1,191 @@
+.filter-person {
+  padding: 25px 0;
+}
+
+.filter-person__form {
+  padding: 25px;
+
+  background-color: $c-mustard;
+  border-radius: 20px;
+}
+
+.filter-person__caption {
+  position: relative;
+
+  margin: 0;
+  padding-bottom: 22px;
+
+  font-size: 22px;
+  line-height: 22px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-cello;
+}
+
+.filter-person__fieldset {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.filter-person__inner {
+  position: relative;
+}
+
+.filter-person__legend {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-cello;
+  text-transform: uppercase;
+
+  border-top: 1px solid $c-saffron;
+}
+
+.filter-person__toogle {
+  position: absolute;
+  top: 13px;
+  right: 0;
+
+  width: 10px;
+  height: 12px;
+
+  background-color: $c-bigStone;
+  border: none;
+}
+
+.filter-person__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 15px;
+  line-height: 15px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  color: $c-tundora;
+}
+
+.filter-person__item {
+  margin-bottom: 12px;
+}
+
+.filter-person__submit {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-portGore;
+  text-transform: uppercase;
+
+  background-color: $c-white;
+  border: none;
+  border-radius: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-person {
+    padding: 40px 0;
+  }
+
+  .filter-person__caption {
+    padding-bottom: 40px;
+
+    font-size: 30px;
+    line-height: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $c-saffron;
+    }
+  }
+
+  .filter-person__form {
+    padding: 35px;
+  }
+
+  .filter-person__fieldset {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+
+  .filter-person__legend {
+    width: 125px;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "bloggersans-medium", "Arial", sans-serif;
+
+    border: none;
+  }
+
+  .filter-person__inner {
+    width: 125px;
+  }
+
+  .filter-person__list {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .filter-person__toogle {
+    display: none;
+  }
+
+  .filter-person__list {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .filter-person__submit {
+    position: relative;
+
+    height: 50px;
+    margin-top: 35px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -36px;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+
+      background-color: $c-saffron;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-person__fieldset {
+    display: block;
+  }
+
+  .filter-person {
+    order: 1;
+    width: 285px;
+    padding-top: 0;
+  }
+
+  .filter-person__list {
+    display: block;
+  }
+}
