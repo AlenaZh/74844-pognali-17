@@ -222,6 +222,7 @@
       width: 120px;
     }
   }
+
   .person-card__buttons {
     width: 100%;
     margin-top: 14px;
@@ -311,6 +312,14 @@
     .person-card__section {
       order: 1;
       margin: 20px 0;
+
+      &--transport {
+        display: none;
+      }
+
+      &--level {
+        display: none;
+      }
     }
 
     .person-card__section-text {
@@ -328,6 +337,7 @@
       flex-flow: column;
       width: 60px;
     }
+
     .person-card__buttons {
       position: relative;
       left: 260px;
@@ -346,16 +356,6 @@
       line-height: 50px;
 
       border-radius: 25px;
-    }
-
-    .person-card__section {
-      &--transport {
-        display: none;
-      }
-
-      &--level {
-        display: none;
-      }
     }
 
     .person-card__like-button {

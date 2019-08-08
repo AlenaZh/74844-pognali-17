@@ -141,17 +141,15 @@
   }
 
   .filter-person__list {
+    display: flex;
+    flex-flow: row;
+
     font-size: 20px;
     line-height: 20px;
   }
 
   .filter-person__toogle {
     display: none;
-  }
-
-  .filter-person__list {
-    display: flex;
-    flex-flow: row;
   }
 
   .filter-person__submit {
