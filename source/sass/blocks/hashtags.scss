@@ -14,25 +14,25 @@
   padding: 0;
 
   list-style: none;
+
+  .partner__person & {
+    justify-content: flex-start;
+  }
 }
 
 .hashtags__link {
   color: inherit;
 }
 
-.partner__person {
-  .hashtags__list {
-    justify-content: flex-start;
-  }
-
-  .hashtags__item {
+.hashtags__item {
+  .partner__person & {
     margin-right: 5px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .partner__person {
-    .hashtags {
+  .hashtags {
+    .partner__person & {
       font-size: 20px;
       line-height: 24px;
     }

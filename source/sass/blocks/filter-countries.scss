@@ -55,16 +55,16 @@
     background-image: url("../../img/dots.svg");
     background-repeat: no-repeat;
   }
+}
 
-  span {
-    display: none;
+.filter-countries__toggle-text {
+  display: none;
 
-    font-size: 20px;
-    line-height: 24px;
-    font-family: "bloggersans-bold", "Arial", sans-serif;
-    color: $c-bigStone;
-    text-transform: uppercase;
-  }
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-bigStone;
+  text-transform: uppercase;
 }
 
 .filter-countries__form {
@@ -136,10 +136,10 @@
   .filter-countries__toggle {
     width: auto;
     padding-right: 85px;
+  }
 
-    span {
-      display: inline-block;
-    }
+  .filter-countries__toggle-text {
+    display: inline-block;
   }
 
   .filter-countries__inner {

@@ -25,18 +25,16 @@
 
   .person__item {
     margin-bottom: 0;
-  }
 
-  .partner__person {
-    .person__item {
+    .partner__person & {
       margin-bottom: 40px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .partner__person {
-    .person__item {
+  .person__item {
+    .partner__person & {
       margin-bottom: 30px;
     }
   }

@@ -5,6 +5,10 @@
   padding: 0;
 
   list-style: none;
+
+  .promo__contact & {
+    flex-flow: row;
+  }
 }
 
 .contact__link {
@@ -42,45 +46,43 @@
     &::after {
       background-image: url("../../img/contacts-phone.svg");
     }
+
+    .promo__contact & {
+      &::before {
+        width: 40px;
+        height: 40px;
+
+        background-color: $c-neonCarrot;
+      }
+
+      &::after {
+        width: 40px;
+        height: 18px;
+
+        background-image: url("../../img/topmenu-phone.svg");
+      }
+    }
   }
 
   &--email {
     &::after {
       background-image: url("../../img/contacts-mail.svg");
     }
-  }
-}
 
-.promo__contact .contact__link {
-  &--phone {
-    &::before {
-      width: 40px;
-      height: 40px;
+    .promo__contact & {
+      &::before {
+        width: 40px;
+        height: 40px;
 
-      background-color: $c-neonCarrot;
-    }
+        background-color: $c-sunglow;
+      }
 
-    &::after {
-      width: 40px;
-      height: 18px;
+      &::after {
+        width: 40px;
+        height: 18px;
 
-      background-image: url("../../img/topmenu-phone.svg");
-    }
-  }
-
-  &--email {
-    &::before {
-      width: 40px;
-      height: 40px;
-
-      background-color: $c-sunglow;
-    }
-
-    &::after {
-      width: 40px;
-      height: 18px;
-
-      background-image: url("../../img/topmenu-mail.svg");
+        background-image: url("../../img/topmenu-mail.svg");
+      }
     }
   }
 }
@@ -130,6 +132,22 @@
     &--hide {
       display: none;
     }
+
+    .main-navigation__contact & {
+      position: absolute;
+
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+
+      white-space: nowrap;
+
+      border: 0;
+
+      clip: rect(0 0 0 0);
+    }
   }
 
   .contact__link {
@@ -142,11 +160,9 @@
       width: 90px;
       height: 36px;
     }
-  }
 
-  .main-navigation__contact {
-    .contact__link {
-      &--phone {
+    &--phone {
+      .main-navigation__contact & {
         &::before {
           width: 50px;
           height: 50px;
@@ -161,8 +177,10 @@
           background-image: url("../../img/topmenu-phone.svg");
         }
       }
+    }
 
-      &--email {
+    &--email {
+      .main-navigation__contact & {
         &::before {
           width: 50px;
           height: 50px;

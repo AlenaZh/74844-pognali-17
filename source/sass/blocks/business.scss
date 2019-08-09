@@ -14,12 +14,6 @@
   background-color: $c-white;
   border-radius: 20px;
   transform: translate(-50%, -50%);
-
-  .price__item {
-    &::before {
-      display: none;
-    }
-  }
 }
 
 .business__inner {
@@ -42,11 +36,6 @@
 .business__price {
   width: 220px;
   margin-left: 0;
-
-  .price__list {
-    font-size: 22px;
-    line-height: 28px;
-  }
 }
 
 .business__button {

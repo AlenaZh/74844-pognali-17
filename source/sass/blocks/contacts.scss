@@ -76,7 +76,7 @@
   border: none;
   border-radius: 10px;
 
-  p {
+  .contacts__submit-text {
     display: none;
 
     font-size: 24px;
@@ -208,7 +208,7 @@
 
     text-align: left;
 
-    p {
+    .contacts__submit-text {
       display: inline;
       margin-left: 36px;
     }

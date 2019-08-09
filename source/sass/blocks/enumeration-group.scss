@@ -9,14 +9,12 @@
   }
 }
 
-.enumeration-group__item {
-  a {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 12px;
-    font-family: "bloggersans", "Arial", sans-serif;
-    color: $c-tundora;
-  }
+.enumeration-group__link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 12px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  color: $c-tundora;
 }
 
 .enumeration-group__letter {
@@ -29,11 +27,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .enumeration-group__item {
-    a {
-      font-size: 20px;
-      line-height: 30px;
-    }
+  .enumeration-group__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

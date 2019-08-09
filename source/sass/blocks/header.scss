@@ -122,8 +122,10 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
-  .header--closed {
-    background-color: $c-portGore;
+  .header {
+    &--closed {
+      background-color: $c-portGore;
+    }
   }
 }
 
@@ -134,6 +136,10 @@
 
     &--closed {
       background-color: $c-bunting;
+
+      .catalog-page & {
+        background-color: $c-portGore;
+      }
     }
   }
 
@@ -147,36 +153,40 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
-  .header--closed {
-    background-color: $c-bunting;
+  .header {
+    &--closed {
+      background-color: $c-bunting;
+    }
   }
 }
 
 @media (max-width: $desktop-width - 1px) {
-  .header--closed {
-    .header__navigation {
-      display: none;
-    }
+  .header {
+    &--closed {
+      .header__navigation {
+        display: none;
+      }
 
-    .header__toggle {
-      &::before,
-      &::after {
-        background-color: $c-white;
+      .header__toggle {
+        &::before,
+        &::after {
+          background-color: $c-white;
+        }
       }
     }
-  }
 
-  .header--nojs {
-    background-color: $c-white;
+    &--nojs {
+      background-color: $c-white;
 
-    .header__toggle {
-      display: none;
-    }
+      .header__toggle {
+        display: none;
+      }
 
-    .header__navigation {
-      position: static;
+      .header__navigation {
+        position: static;
 
-      display: flex;
+        display: flex;
+      }
     }
   }
 }

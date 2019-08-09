@@ -5,6 +5,10 @@
   padding: 0;
 
   list-style: none;
+
+  .partner__person & {
+    flex-flow: row;
+  }
 }
 
 .transport__name {
@@ -18,24 +22,17 @@
   border-radius: 5px;
 }
 
-.partner__person {
-  .transport__list {
-    flex-flow: row;
-  }
-}
-
-
 @media (min-width: $tablet-width) {
-  .partner__person {
-    .transport__list {
+  .transport__list {
+    .partner__person & {
       flex-flow: column;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .partner__person {
-    .transport__list {
+  .transport__list {
+    .partner__person & {
       flex-flow: row;
     }
   }

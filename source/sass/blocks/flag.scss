@@ -29,37 +29,43 @@
   }
 }
 
-.partner__person {
-  .flag__list {
+.flag__list {
+  .partner__person & {
     flex-flow: column;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .partner__person {
-    .flag__list {
+  .flag__list {
+    .partner__person & {
       flex-flow: row;
       justify-content: left;
     }
+  }
 
-    .flag__name {
+  .flag__name {
+    .partner__person & {
       font-size: 20px;
       line-height: 30px;
     }
+  }
 
-    .flag__item:not(:last-of-type) {
+  .flag__item:not(:last-of-type) {
+    .partner__person & {
       margin-right: 30px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .partner__person {
-    .flag__list {
+  .flag__list {
+    .partner__person & {
       flex-flow: column;
     }
+  }
 
-    .flag__item:nth-of-type(n) {
+  .flag__item:nth-of-type(n) {
+    .partner__person & {
       margin-right: 0;
     }
   }

@@ -1,12 +1,3 @@
 .catalog-page {
   background-color: $c-whisper;
 }
-
-
-@media (min-width: $tablet-width) {
-  .catalog-page {
-    .header--closed {
-      background-color: $c-portGore;
-    }
-  }
-}

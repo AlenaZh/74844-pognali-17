@@ -173,14 +173,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .filter-person__fieldset {
-    display: block;
-  }
-
   .filter-person {
     order: 1;
     width: 285px;
     padding-top: 0;
+  }
+
+  .filter-person__fieldset {
+    display: block;
   }
 
   .filter-person__list {
