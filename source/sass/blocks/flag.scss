@@ -5,6 +5,10 @@
   padding: 0;
 
   list-style: none;
+
+  .partner__person & {
+    flex-flow: column;
+  }
 }
 
 .flag__name {
@@ -26,12 +30,6 @@
     text-transform: none;
 
     background-color: $c-blueZodiac;
-  }
-}
-
-.flag__list {
-  .partner__person & {
-    flex-flow: column;
   }
 }
 
