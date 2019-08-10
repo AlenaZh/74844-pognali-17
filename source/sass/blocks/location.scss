@@ -1,0 +1,149 @@
+.location {
+  position: relative;
+  z-index: 4;
+
+  margin-top: -25px;
+}
+
+.location__inner {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-flow: column;
+  padding-top: 32px + 25px;
+  padding-right: 25px;
+  padding-bottom: 36px;
+  padding-left: 25px;
+
+  background-color: $c-mustard;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.location__address {
+  position: relative;
+
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-left: 60px;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-bigStone;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    display: block;
+    width: 45px;
+    height: 45px;
+
+    background-color: $c-ebony;
+    border-radius: 50%;
+  }
+}
+
+.location__button {
+  display: block;
+  padding: 0 24px;
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 60px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: left;
+  color: $c-cello;
+
+  background-color: $c-mustard;
+  border: 3px solid $c-bigStone;
+  border-radius: 10px;
+}
+
+.location__map {
+  position: relative;
+  z-index: 1;
+
+  margin-top: -25px;
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    margin-top: -40px;
+  }
+
+  .location__inner {
+    padding-top: 48px + 40px;
+    padding-right: 75px;
+    padding-bottom: 85px;
+    padding-left: 75px;
+
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  .location__address {
+    margin-bottom: 45px;
+
+    font-size: 28px;
+    line-height: 45px;
+  }
+
+  .location__button {
+    padding: 0 34px;
+
+    font-size: 24px;
+    line-height: 75px;
+    color: $c-bigStone;
+
+    border-radius: 20px;
+  }
+
+  .location__map {
+    margin-top: -40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    margin-top: -60px;
+  }
+
+  .location__inner {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 54px + 60px;
+    padding-right: 134px;
+    padding-bottom: 57px;
+    padding-left: 134px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .location__address {
+    margin-right: 144px;
+    margin-bottom: 0;
+    padding-left: 122px;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .location__button {
+    padding-right: 64px;
+  }
+
+  .location__map {
+    margin-top: -60px;
+  }
+}

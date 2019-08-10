@@ -1,0 +1,71 @@
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "bloggersans-light";
+
+  src: local("bloggersans-light"),
+    url("../fonts/bloggersans-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 300;
+  font-family: "bloggersans-light";
+
+  src: local("bloggersans-lightitalic"),
+    url("../fonts/bloggersans-lightitalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "bloggersans";
+
+  src: local("bloggersans"),
+    url("../fonts/bloggersans.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "bloggersans";
+
+  src: local("bloggersans-italic"),
+    url("../fonts/bloggersans-italic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "bloggersans-medium";
+
+  src: local("bloggersans-medium"),
+    url("../fonts/bloggersans-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 600;
+  font-family: "bloggersans-medium";
+
+  src: local("bloggersans-mediumitalic"),
+    url("../fonts/bloggersans-mediumitalic.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "bloggersans-bold";
+
+  src: local("bloggersans-bold"),
+    url("../fonts/bloggersans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 700;
+  font-family: "bloggersans-bold";
+
+  src: local("bloggersans-bolditalic"),
+    url("../fonts/bloggersans-bolditalic.woff") format("woff");
+}

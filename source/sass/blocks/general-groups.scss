@@ -1,0 +1,35 @@
+.general-groups__list {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.general-groups__item:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.general-groups__name {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: rgba($c-bigStone, 0.3);
+  text-transform: uppercase;
+}
+
+.general-groups__radio:checked ~ .general-groups__name {
+  color: $c-bigStone;
+}
+
+@media (min-width: $tablet-width) {
+  .general-groups__list {
+    flex-flow: row;
+  }
+
+  .general-groups__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

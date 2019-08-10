@@ -1,0 +1,23 @@
+.copyright {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: 0;
+
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "bloggersans", "Arial", sans-serif;
+  color: $c-tundora;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

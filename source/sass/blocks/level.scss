@@ -1,0 +1,33 @@
+.level {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+
+  color: $c-white;
+
+  background-color: rgba($c-black, 0.6);
+  border-radius: 50%;
+
+  &--dark {
+    color: $c-cello;
+
+    background-color: $c-white;
+  }
+}
+
+.level__number {
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+}
+
+.level__text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "bloggersans", "Arial", sans-serif;
+}

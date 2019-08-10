@@ -1,0 +1,41 @@
+.person__list {
+  display: flex;
+  flex-flow: column;
+  margin-top: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.person__item {
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .person__list {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .person__item {
+    margin-bottom: 0;
+
+    .partner__person & {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .person__item {
+    .partner__person & {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.partner {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-bottom: 46px + 25px;
+
+  background-color: $c-whisper;
+}
+
+.partner__loading {
+  width: 118px;
+  margin: 24px 0 27px 0;
+  padding-left: 34px;
+
+  font-style: normal;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-cello;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .partner {
+    padding-bottom: 60px + 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .partner {
+    width: 950px;
+    padding-bottom: 78px + 52px;
+  }
+
+  .partner__loading {
+    width: 140px;
+    margin: 45px 0 50px 0;
+    padding-left: 54px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

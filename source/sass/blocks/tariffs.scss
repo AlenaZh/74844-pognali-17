@@ -1,0 +1,142 @@
+.tariffs {
+  position: relative;
+  z-index: 6;
+
+  margin-top: -25px;
+  padding-top: 50px + 25px;
+  padding-bottom: 25px;
+
+  background-color: $c-whisper;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.tariffs__container {
+  position: relative;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.tariffs__caption {
+  width: 130px;
+  margin-top: 0;
+  margin-bottom: 45px;
+  padding-left: 25px;
+
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  color: $c-neonCarrot;
+}
+
+.tariffs__price {
+  align-self: flex-start;
+  width: 200px;
+  margin-bottom: 18px;
+  margin-left: 25px;
+}
+
+.tariffs__button {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 42px;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  text-align: center;
+  color: $c-bigStone;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    margin-top: -40px;
+    padding-top: 75px + 40px;
+    padding-bottom: 64px;
+
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+  }
+
+  .tariffs__caption {
+    width: auto;
+    margin-bottom: 75px;
+    padding: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .tariffs__price {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 34px;
+    padding-right: 35px;
+    padding-left: 90px;
+  }
+
+  .tariffs__button {
+    position: relative;
+
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 67px;
+    text-align: left;
+    color: $c-deepKoamaru;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+
+      width: 67px;
+      height: 67px;
+
+      background-color: $c-snuff;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(50% - 12px);
+      left: 25px;
+
+      width: 17px;
+      height: 21px;
+
+      background-image: url("../../img/business.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    margin-top: -60px;
+    padding-top: 108px + 60px;
+    padding-bottom: 166px;
+
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .tariffs__caption {
+    margin-bottom: 134px;
+  }
+
+  .tariffs__price {
+    width: 905px;
+    margin-left: 71px;
+  }
+
+  .tariffs__button {
+    margin-left: 71px;
+  }
+}
